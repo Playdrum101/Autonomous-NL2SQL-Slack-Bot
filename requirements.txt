@@ -1,0 +1,8 @@
+langchain
+langgraph
+chromadb
+sqlalchemy
+sqlparse
+networkx
+langchain-groq
+python-dotenv

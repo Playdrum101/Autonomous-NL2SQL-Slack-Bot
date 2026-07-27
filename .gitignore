@@ -1,0 +1,12 @@
+# Environments
+.env
+.venv/
+venv/
+__pycache__/
+
+# Vector Databases
+chroma_db/
+
+# OS Files
+.DS_Store
+Thumbs.db

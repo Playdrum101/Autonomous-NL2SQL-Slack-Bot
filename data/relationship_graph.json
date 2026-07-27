@@ -1,0 +1,36 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "Coupons"
+        },
+        {
+            "id": "Orders"
+        },
+        {
+            "id": "Products"
+        },
+        {
+            "id": "Users"
+        }
+    ],
+    "edges": [
+        {
+            "relationship": "Orders.user_id -> Users.user_id",
+            "source": "Orders",
+            "target": "Users"
+        },
+        {
+            "relationship": "Orders.product_id -> Products.product_id",
+            "source": "Orders",
+            "target": "Products"
+        },
+        {
+            "relationship": "Orders.coupon_id -> Coupons.coupon_id",
+            "source": "Orders",
+            "target": "Coupons"
+        }
+    ]
+}

@@ -1,0 +1,206 @@
+{
+    "Coupons": {
+        "columns": [
+            {
+                "column_name": "coupon_id",
+                "data_type": "INTEGER",
+                "is_primary_key": true,
+                "top_frequent_values": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "column_name": "code",
+                "data_type": "TEXT",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "SAVE10",
+                    "WINTER20"
+                ]
+            },
+            {
+                "column_name": "discount_percent",
+                "data_type": "REAL",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    20.0,
+                    10.0
+                ]
+            },
+            {
+                "column_name": "valid_until",
+                "data_type": "DATE",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "2026-12-31",
+                    "2026-03-01"
+                ]
+            }
+        ],
+        "row_count": 2
+    },
+    "Orders": {
+        "columns": [
+            {
+                "column_name": "order_id",
+                "data_type": "INTEGER",
+                "is_primary_key": true,
+                "top_frequent_values": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "column_name": "user_id",
+                "data_type": "INTEGER",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    3,
+                    2,
+                    1
+                ]
+            },
+            {
+                "column_name": "product_id",
+                "data_type": "INTEGER",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    4,
+                    2,
+                    1
+                ]
+            },
+            {
+                "column_name": "coupon_id",
+                "data_type": "INTEGER",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    2,
+                    1
+                ]
+            },
+            {
+                "column_name": "quantity",
+                "data_type": "INTEGER",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "column_name": "order_date",
+                "data_type": "DATE",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "2024-03-11",
+                    "2024-02-21",
+                    "2024-01-16"
+                ]
+            }
+        ],
+        "row_count": 3
+    },
+    "Products": {
+        "columns": [
+            {
+                "column_name": "product_id",
+                "data_type": "INTEGER",
+                "is_primary_key": true,
+                "top_frequent_values": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "column_name": "name",
+                "data_type": "TEXT",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "Wireless Mouse",
+                    "Laptop Pro",
+                    "Desk Chair"
+                ]
+            },
+            {
+                "column_name": "category",
+                "data_type": "TEXT",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "Electronics",
+                    "Home Appliances",
+                    "Furniture"
+                ]
+            },
+            {
+                "column_name": "price",
+                "data_type": "REAL",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    1200.0,
+                    150.0,
+                    89.99
+                ]
+            },
+            {
+                "column_name": "stock_quantity",
+                "data_type": "INTEGER",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    200,
+                    50,
+                    45
+                ]
+            }
+        ],
+        "row_count": 4
+    },
+    "Users": {
+        "columns": [
+            {
+                "column_name": "user_id",
+                "data_type": "INTEGER",
+                "is_primary_key": true,
+                "top_frequent_values": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            {
+                "column_name": "name",
+                "data_type": "TEXT",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "Charlie Brown",
+                    "Bob Johnson",
+                    "Alice Smith"
+                ]
+            },
+            {
+                "column_name": "email",
+                "data_type": "TEXT",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "alice@example.com",
+                    "bob@example.com",
+                    "charlie@example.com"
+                ]
+            },
+            {
+                "column_name": "signup_date",
+                "data_type": "DATE",
+                "is_primary_key": false,
+                "top_frequent_values": [
+                    "2024-03-10",
+                    "2024-02-20",
+                    "2024-01-15"
+                ]
+            }
+        ],
+        "row_count": 3
+    }
+}
