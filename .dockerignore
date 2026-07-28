@@ -1,0 +1,15 @@
+# Development environments and secrets
+.venv/
+.env
+__pycache__/
+*.pyc
+
+# Local databases (these should be dynamically created or stored in cloud storage)
+chroma_db/
+
+# Documentation and design files
+*.png
+*.md
+
+# Lock files (since we will use requirements.txt to install dependencies)
+uv.lock
