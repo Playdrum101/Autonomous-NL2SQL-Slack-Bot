@@ -10,7 +10,7 @@ import sqlite3
 import sqlparse
 # Import the context assembler from the same src/ directory
 from src.context_assembler import assemble_context
-
+from langgraph.checkpoint.memory import MemorySaver
 # Load the Groq API Key from your .env file in the root directory
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(PROJECT_ROOT / ".env")
@@ -176,8 +176,14 @@ workflow.add_conditional_edges(
     }
 )
 
-# Compile the graph into an executable application
-app = workflow.compile()
+# Initialize the memory checkpointer
+memory = MemorySaver()
+
+# Compile the graph with memory and a pause breakpoint
+app = workflow.compile(
+    checkpointer=memory,
+    interrupt_before=["execute_sql"] 
+)
 
 if __name__ == "__main__":
     # Test query
