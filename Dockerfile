@@ -21,6 +21,11 @@ COPY src/ ./src/
 COPY scripts/ ./scripts/
 COPY data/ ./data/
 
+# Generate graph topology, schema stats, and ChromaDB vector embeddings
+RUN python scripts/build_relationship_graph.py && \
+    python scripts/build_schema_stats.py && \
+    python scripts/build_vector_store.py
+
 # Cloud Run injects a PORT environment variable, which defaults to 8080
 EXPOSE 8080
 
