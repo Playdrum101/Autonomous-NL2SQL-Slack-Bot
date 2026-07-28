@@ -9,7 +9,7 @@ from typing import TypedDict, Optional, Any
 import sqlite3
 import sqlparse
 # Import the context assembler from the same src/ directory
-from context_assembler import assemble_context
+from src.context_assembler import assemble_context
 
 # Load the Groq API Key from your .env file in the root directory
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
