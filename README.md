@@ -2,7 +2,7 @@
 
 An enterprise-grade, multi-agent Slack application that translates natural language queries into executable SQL commands. The overarching goal is to allow non-technical team members to query a database securely via Slack, while strictly preventing LLM hallucinations and ensuring enterprise-grade deployment. This system leverages a custom 4-Tier Context Engine (Hybrid RAG) to prevent LLM hallucinations, ensuring highly deterministic and secure database interactions. Engineered with Human-in-the-Loop (HITL) authorization and strict Abstract Syntax Tree (AST) security gating, the bot is deployed via a zero-cost MLOps pipeline on Google Cloud Platform.
 
-![Architecture Diagram](Autonomous NL2SQL Slack Bot Architecture Diagram.png)
+<img src="Autonomous%20NL2SQL%20Slack%20Bot%20Architecture%20Diagram.png" alt="Architecture Diagram" width="500">
 
 ## 🏗️ Architecture & Features
 
