@@ -36,7 +36,7 @@ def build_context_node(state: AgentState):
 # 3. Node: SQL Generator
 def generate_sql_node(state: AgentState):
     print("\n--- NODE 2: Generating SQL ---")
-    llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+    llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0)
     
     # Check if we are in a self-healing loop
     error_msg = state.get("execution_error")
